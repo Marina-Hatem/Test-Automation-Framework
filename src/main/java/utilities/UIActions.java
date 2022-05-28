@@ -3,6 +3,7 @@ package utilities;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
 public class UIActions 
@@ -11,13 +12,14 @@ public class UIActions
 	public JavascriptExecutor js;
 	WebDriver driver;
 	public Select select;
+	public Actions action;
 	
 	
 	public UIActions(WebDriver d)
 	{
 		this.driver = d;
 		js = (JavascriptExecutor) d;
-		
+		action = new Actions(d);		
 	}
 	
 	//click()
@@ -60,6 +62,11 @@ public class UIActions
 		select.selectByIndex(index);
 	}
 	
+	//Hover
+	public void Hover(WebElement a, WebElement b)
+	{
+		action.moveToElement(a).moveToElement(b).click().build().perform();
+	}
 	
 	
 }

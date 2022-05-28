@@ -36,6 +36,21 @@ public class HomePage
 	@FindBy(id = "customerCurrency")
 	WebElement CurrencyList;
 	
+	//@FindBy(linkText = "Computers")
+	//WebElement ComputersMenu;
+	
+	//@FindBy(linkText = "Notebooks")
+	//WebElement NotebooksInsideMenu;
+	
+	@FindBy(xpath = "/html/body/div[6]/div[2]/ul[1]/li[1]/a")
+	WebElement ComputersMenu;
+	
+	@FindBy(xpath = "/html/body/div[6]/div[2]/ul[1]/li[1]/ul/li[2]/a")
+	WebElement NotebooksInsideMenu;
+
+	@FindBy(css = "strong.current-item")
+	public WebElement NotebookPath;
+	
 	
 	public void OpenRegistrationPage()
 	{
@@ -64,6 +79,11 @@ public class HomePage
 	{
 		
 		UIAc.SelectFromDropDownByVisibleText(CurrencyList, TxtValue);
+	}
+	
+	public void HoverToNotebooksPage()
+	{
+		UIAc.Hover(ComputersMenu, NotebooksInsideMenu);
 	}
 
 }

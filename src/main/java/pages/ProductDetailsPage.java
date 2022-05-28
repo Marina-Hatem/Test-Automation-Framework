@@ -26,8 +26,16 @@ public class ProductDetailsPage
 	@FindBy(id = "price-value-4")
 	public WebElement priceValue;
 	
+	@FindBy(linkText = "Add your review")
+	public WebElement AddReviewBtn;
+	
 	public void OpenEmailAFriendPage()
 	{
 		UIActions.clickButton(EmailAFriendBtn);
+	}
+	
+	public void OpenReviewPage()
+	{
+		UIActions.clickButton(AddReviewBtn);
 	}
 }

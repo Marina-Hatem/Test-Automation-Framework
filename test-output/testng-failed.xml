@@ -4,14 +4,14 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="tests.ChangeCurrencyTestC">
+      <class name="tests.ProductHoverMenuTestC">
         <methods>
-          <include name="ScreenshotOnFailure"/>
-          <include name="EndDriver"/>
+          <include name="UserCanHoverToNoteBooksPage"/>
           <include name="StartDriver"/>
-          <include name="UserCanChangeCurrency"/>
+          <include name="EndDriver"/>
+          <include name="ScreenshotOnFailure"/>
         </methods>
-      </class> <!-- tests.ChangeCurrencyTestC -->
+      </class> <!-- tests.ProductHoverMenuTestC -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [nopCommerce Regression Suite] -->
