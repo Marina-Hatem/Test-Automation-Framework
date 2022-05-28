@@ -3,7 +3,7 @@
   <test name="Test">
   <parameter name="browser" value="firefox"></parameter>
     <classes>
-      <class name="tests.ContactUsTestC"></class>
+      <class name="tests.ChangeCurrencyTestC"></class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

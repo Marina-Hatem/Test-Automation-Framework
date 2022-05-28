@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import utilities.UIActions;
+
 public class ProductDetailsPage 
 {
 	WebDriver driver;
@@ -18,6 +20,14 @@ public class ProductDetailsPage
 	@FindBy(css = "strong.current-item")
 	public WebElement CurrentproductName;
 	
+	@FindBy(css = "button.button-2.email-a-friend-button")
+	public WebElement EmailAFriendBtn;
 	
-
+	@FindBy(id = "price-value-4")
+	public WebElement priceValue;
+	
+	public void OpenEmailAFriendPage()
+	{
+		UIActions.clickButton(EmailAFriendBtn);
+	}
 }

@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 import utilities.UIActions;
 public class HomePage 
@@ -16,6 +17,7 @@ public class HomePage
 	public HomePage(WebDriver d)
 	{
 		this.driver = d;
+		UIAc = new UIActions(driver);
 		PageFactory.initElements(driver, this);
 	}
 
@@ -30,6 +32,10 @@ public class HomePage
 
 	@FindBy(linkText = "Contact us")
 	WebElement ContactUsLink;
+	
+	@FindBy(id = "customerCurrency")
+	WebElement CurrencyList;
+	
 	
 	public void OpenRegistrationPage()
 	{
@@ -48,10 +54,16 @@ public class HomePage
 	
 	public void OpenContactUsPage() throws InterruptedException
 	{
-		UIAc = new UIActions(driver, js);
+		
 		UIAc.ScrollDown(0,5200);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		UIActions.clickButton(ContactUsLink);
+	}
+	
+	public void ChangeCurrency(String TxtValue)
+	{
+		
+		UIAc.SelectFromDropDownByVisibleText(CurrencyList, TxtValue);
 	}
 
 }

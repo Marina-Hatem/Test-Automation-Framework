@@ -4,14 +4,14 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="tests.ContactUsTestC">
+      <class name="tests.ChangeCurrencyTestC">
         <methods>
           <include name="ScreenshotOnFailure"/>
           <include name="EndDriver"/>
-          <include name="SendContactUsMessage"/>
           <include name="StartDriver"/>
+          <include name="UserCanChangeCurrency"/>
         </methods>
-      </class> <!-- tests.ContactUsTestC -->
+      </class> <!-- tests.ChangeCurrencyTestC -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [nopCommerce Regression Suite] -->

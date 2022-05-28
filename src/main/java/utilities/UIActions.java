@@ -3,18 +3,21 @@ package utilities;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 public class UIActions 
 {
 
 	public JavascriptExecutor js;
 	WebDriver driver;
+	public Select select;
 	
-	public UIActions(WebDriver d, JavascriptExecutor javaObj)
+	
+	public UIActions(WebDriver d)
 	{
 		this.driver = d;
-		this.js = javaObj;
-		js = (JavascriptExecutor) driver;
+		js = (JavascriptExecutor) d;
+		
 	}
 	
 	//click()
@@ -42,6 +45,21 @@ public class UIActions
 				e.printStackTrace();
 			}		
 	}
+	
+	//DropDownList by visible text
+	public void SelectFromDropDownByVisibleText(WebElement e, String Txtvalue)
+	{
+		select = new Select(e);
+		select.selectByVisibleText(Txtvalue);
+	}
+	
+	//DropDownList by visible index
+	public void SelectFromDropDownByIndex(WebElement e, int index)
+	{
+		select = new Select(e);
+		select.selectByIndex(index);
+	}
+	
 	
 	
 }

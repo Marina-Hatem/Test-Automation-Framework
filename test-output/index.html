@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +104,12 @@
                     <div class="method-list-content passed suite-nopCommerce_Regression_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-nopCommerce_Regression_Suite" title="tests.ContactUsTestC" class="method navigator-link" hash-for-method="SendContactUsMessage">SendContactUsMessage</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-nopCommerce_Regression_Suite" title="tests.ChangeCurrencyTestC" class="method navigator-link" hash-for-method="UserCanChangeCurrency">UserCanChangeCurrency</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-nopCommerce_Regression_Suite" title="tests.ChangeCurrencyTestC" class="method navigator-link" hash-for-method="UserCanSearchForProduct">UserCanSearchForProduct</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-nopCommerce_Regression_Suite -->
@@ -122,14 +127,21 @@
           <div class="suite-nopCommerce_Regression_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">tests.ContactUsTestC</span>
+              <span class="class-name">tests.ChangeCurrencyTestC</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="SendContactUsMessage">
-                  </a> <!-- SendContactUsMessage -->
-                  <span class="method-name">SendContactUsMessage</span>
+                  <a name="UserCanChangeCurrency">
+                  </a> <!-- UserCanChangeCurrency -->
+                  <span class="method-name">UserCanChangeCurrency</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UserCanSearchForProduct">
+                  </a> <!-- UserCanSearchForProduct -->
+                  <span class="method-name">UserCanSearchForProduct</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -147,7 +159,7 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.ContactUsTestC&quot;/&gt;
+      &lt;class name=&quot;tests.ChangeCurrencyTestC&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- nopCommerce Regression Suite --&gt;
@@ -187,16 +199,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'SendContactUsMessage')
-data.setCell(0, 2, 'tests.ContactUsTestC')
-data.setCell(0, 3, 1791);
+data.setCell(0, 1, 'UserCanSearchForProduct')
+data.setCell(0, 2, 'tests.ChangeCurrencyTestC')
+data.setCell(0, 3, 5034);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'UserCanChangeCurrency')
+data.setCell(1, 2, 'tests.ChangeCurrencyTestC')
+data.setCell(1, 3, 1612);
 window.suiteTableData['nopCommerce_Regression_Suite']= { tableData: data, tableDiv: 'times-div-nopCommerce_Regression_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 6 seconds</span>
               <div id="times-div-nopCommerce_Regression_Suite">
               </div> <!-- times-div-nopCommerce_Regression_Suite -->
             </div> <!-- times-div -->
@@ -222,22 +238,30 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.ContactUsTestC</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">tests.ChangeCurrencyTestC</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">StartDriver(firefox)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">SendContactUsMessage</span>
-                <span class="method-start">5600 ms</span>
+                <span class="method-name">UserCanSearchForProduct</span>
+                <span class="method-start">5706 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">ScreenshotOnFailure([TestResult name=SendContactUsMessage status=SUCCESS method=ContactUsTestC.SendContactUsMessage()[pr...)</span>
-                <span class="method-start">7394 ms</span>
+                <span class="method-name">ScreenshotOnFailure([TestResult name=UserCanSearchForProduct status=SUCCESS method=ChangeCurrencyTestC.UserCanSearchForP...)</span>
+                <span class="method-start">10745 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">UserCanChangeCurrency</span>
+                <span class="method-start">10752 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">ScreenshotOnFailure([TestResult name=UserCanChangeCurrency status=SUCCESS method=ChangeCurrencyTestC.UserCanChangeCurren...)</span>
+                <span class="method-start">12367 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">EndDriver</span>
-                <span class="method-start">7399 ms</span>
+                <span class="method-start">12369 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
