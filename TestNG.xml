@@ -1,9 +1,9 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="nopCommerce Regression Suite">
-  <test name="Test">
+  <test name="Regression Test" preserve-order="false">
   <parameter name="browser" value="firefox"></parameter>
     <classes>
-      <class name="tests.ProductHoverMenuTestC"></class>
+      <class name="tests.UserRegistrationTestCWithDDTandDataProvider"></class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
