@@ -3,7 +3,7 @@
   <test name="Regression Test" preserve-order="false">
   <parameter name="browser" value="firefox"></parameter>
     <classes>
-      <class name="tests.UserRegistrationTestCWithDDTandExcel"></class>
+      <class name="tests.UserRegistrationTestCWithDDTandJSON"></class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

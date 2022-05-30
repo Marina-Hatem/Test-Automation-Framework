@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-05-30T01:20:12 EET" name="nopCommerce Regression Suite" finished-at="2022-05-30T01:20:41 EET" duration-ms="28379">
+  <suite started-at="2022-05-30T14:41:27 EET" name="nopCommerce Regression Suite" finished-at="2022-05-30T14:41:42 EET" duration-ms="14364">
     <groups>
     </groups>
-    <test started-at="2022-05-30T01:20:12 EET" name="Regression Test" finished-at="2022-05-30T01:20:41 EET" duration-ms="28379">
-      <class name="tests.UserRegistrationTestCWithDDTandExcel">
-        <test-method is-config="true" signature="StartDriver(java.lang.String)[pri:0, instance:tests.UserRegistrationTestCWithDDTandExcel@54c5a2ff]" started-at="2022-05-30T01:20:12 EET" name="StartDriver" finished-at="2022-05-30T01:20:20 EET" duration-ms="7833" status="PASS">
+    <test started-at="2022-05-30T14:41:27 EET" name="Regression Test" finished-at="2022-05-30T14:41:42 EET" duration-ms="14364">
+      <class name="tests.UserRegistrationTestCWithDDTandJSON">
+        <test-method is-config="true" signature="StartDriver(java.lang.String)[pri:0, instance:tests.UserRegistrationTestCWithDDTandJSON@f78a47e]" started-at="2022-05-30T14:41:27 EET" name="StartDriver" finished-at="2022-05-30T14:41:34 EET" duration-ms="7081" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,122 +18,26 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StartDriver -->
-        <test-method signature="UserCanRegisterSuccessFully(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:tests.UserRegistrationTestCWithDDTandExcel@54c5a2ff]" started-at="2022-05-30T01:20:21 EET" name="UserCanRegisterSuccessFully" data-provider="ExcelData" finished-at="2022-05-30T01:20:29 EET" duration-ms="7964" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Toumie]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Hatem]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[T@gmail.com]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[1237894.0]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="UserCanRegisterSuccessFully()[pri:0, instance:tests.UserRegistrationTestCWithDDTandJSON@f78a47e]" started-at="2022-05-30T14:41:34 EET" name="UserCanRegisterSuccessFully" finished-at="2022-05-30T14:41:41 EET" duration-ms="6718" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserCanRegisterSuccessFully -->
-        <test-method is-config="true" signature="ScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.UserRegistrationTestCWithDDTandExcel@54c5a2ff]" started-at="2022-05-30T01:20:29 EET" name="ScreenshotOnFailure" finished-at="2022-05-30T01:20:29 EET" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="ScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.UserRegistrationTestCWithDDTandJSON@f78a47e]" started-at="2022-05-30T14:41:41 EET" name="ScreenshotOnFailure" finished-at="2022-05-30T14:41:41 EET" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=UserCanRegisterSuccessFully status=SUCCESS method=UserRegistrationTestCWithDDTandExcel.UserCanRegisterSuccessFully(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:tests.UserRegistrationTestCWithDDTandExcel@54c5a2ff] output={null}]]]>
+                <![CDATA[[TestResult name=UserCanRegisterSuccessFully status=SUCCESS method=UserRegistrationTestCWithDDTandJSON.UserCanRegisterSuccessFully()[pri:0, instance:tests.UserRegistrationTestCWithDDTandJSON@f78a47e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ScreenshotOnFailure -->
-        <test-method signature="UserCanRegisterSuccessFully(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:tests.UserRegistrationTestCWithDDTandExcel@54c5a2ff]" started-at="2022-05-30T01:20:29 EET" name="UserCanRegisterSuccessFully" data-provider="ExcelData" finished-at="2022-05-30T01:20:35 EET" duration-ms="5297" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Gemmy]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Hanna]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[ge@gmail.com]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[7.89456123E8]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- UserCanRegisterSuccessFully -->
-        <test-method is-config="true" signature="ScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.UserRegistrationTestCWithDDTandExcel@54c5a2ff]" started-at="2022-05-30T01:20:35 EET" name="ScreenshotOnFailure" finished-at="2022-05-30T01:20:35 EET" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=UserCanRegisterSuccessFully status=SUCCESS method=UserRegistrationTestCWithDDTandExcel.UserCanRegisterSuccessFully(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:tests.UserRegistrationTestCWithDDTandExcel@54c5a2ff] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ScreenshotOnFailure -->
-        <test-method signature="UserCanRegisterSuccessFully(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:tests.UserRegistrationTestCWithDDTandExcel@54c5a2ff]" started-at="2022-05-30T01:20:35 EET" name="UserCanRegisterSuccessFully" data-provider="ExcelData" finished-at="2022-05-30T01:20:40 EET" duration-ms="5111" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Tarek]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Fawzy]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[tf@gmail.com]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[8.7945698E7]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- UserCanRegisterSuccessFully -->
-        <test-method is-config="true" signature="ScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.UserRegistrationTestCWithDDTandExcel@54c5a2ff]" started-at="2022-05-30T01:20:40 EET" name="ScreenshotOnFailure" finished-at="2022-05-30T01:20:40 EET" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=UserCanRegisterSuccessFully status=SUCCESS method=UserRegistrationTestCWithDDTandExcel.UserCanRegisterSuccessFully(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:tests.UserRegistrationTestCWithDDTandExcel@54c5a2ff] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ScreenshotOnFailure -->
-        <test-method is-config="true" signature="EndDriver()[pri:0, instance:tests.UserRegistrationTestCWithDDTandExcel@54c5a2ff]" started-at="2022-05-30T01:20:40 EET" name="EndDriver" finished-at="2022-05-30T01:20:41 EET" duration-ms="1028" status="PASS">
+        <test-method is-config="true" signature="EndDriver()[pri:0, instance:tests.UserRegistrationTestCWithDDTandJSON@f78a47e]" started-at="2022-05-30T14:41:41 EET" name="EndDriver" finished-at="2022-05-30T14:41:42 EET" duration-ms="544" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EndDriver -->
-      </class> <!-- tests.UserRegistrationTestCWithDDTandExcel -->
+      </class> <!-- tests.UserRegistrationTestCWithDDTandJSON -->
     </test> <!-- Regression Test -->
   </suite> <!-- nopCommerce Regression Suite -->
 </testng-results>

@@ -4,14 +4,14 @@
   <test thread-count="5" name="Regression Test(failed)">
     <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="tests.UserRegistrationTestCWithDDTandExcel">
+      <class name="tests.UserRegistrationTestCWithDDTandCSV">
         <methods>
           <include name="EndDriver"/>
-          <include name="ScreenshotOnFailure"/>
-          <include name="StartDriver"/>
           <include name="UserCanRegisterSuccessFully"/>
+          <include name="StartDriver"/>
+          <include name="ScreenshotOnFailure"/>
         </methods>
-      </class> <!-- tests.UserRegistrationTestCWithDDTandExcel -->
+      </class> <!-- tests.UserRegistrationTestCWithDDTandCSV -->
     </classes>
   </test> <!-- Regression Test(failed) -->
 </suite> <!-- Failed suite [nopCommerce Regression Suite] -->
