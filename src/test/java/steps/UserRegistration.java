@@ -26,11 +26,12 @@ public class UserRegistration
 	UserRegistrationPage UReg ;
 	LoginPage LoginP;
 	
-	Faker fakeData = new Faker();
-	String Fname = fakeData.name().firstName();
-	String Lname = fakeData.name().lastName();
-	String email = fakeData.internet().emailAddress();
-	String Password = fakeData.number().digits(8).toString();
+	/*
+	 * Faker fakeData = new Faker(); String Fname = fakeData.name().firstName();
+	 * String Lname = fakeData.name().lastName(); String email =
+	 * fakeData.internet().emailAddress(); String Password =
+	 * fakeData.number().digits(8).toString();
+	 */
 	
 	//@Parameters({"browser"})
 	@Before
@@ -56,11 +57,18 @@ public class UserRegistration
 		Assert.assertTrue(driver.getCurrentUrl().contains("register"));
 	}
 	
-	@And("^He Enters the user data$")
-	public void He_Enters_the_user_data()
+	/*
+	 * @And("^He Enters the user data$") public void He_Enters_the_user_data() {
+	 * UReg = new UserRegistrationPage(driver); UReg.Register(Fname, Lname, email ,
+	 * Password); }
+	 */
+
+
+	@And("He Enters {string}, {string}, {string}, {string}")
+	public void He_Enters_the_user_data(String fname, String lName, String email, String pwd)
 	{
 		UReg = new UserRegistrationPage(driver);
-		UReg.Register(Fname, Lname, email , Password);
+		UReg.Register(fname, lName, email , pwd);
 	}
 	
 	@Then("^The registration page displayed successfully$")
