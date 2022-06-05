@@ -1,63 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-02T20:27:37 EET" name="Default suite" finished-at="2022-06-02T20:27:48 EET" duration-ms="10165">
+  <suite started-at="2022-06-05T17:30:40 EET" name="Default suite" finished-at="2022-06-05T17:30:43 EET" duration-ms="3267">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@53fb3dab]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-06-02T20:27:37 EET" name="Default test" finished-at="2022-06-02T20:27:48 EET" duration-ms="10165">
-      <class name="runner.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@53fb3dab]" started-at="2022-06-02T20:27:37 EET" name="setUpClass" finished-at="2022-06-02T20:27:38 EET" duration-ms="434" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@6adc5b9c]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2022-06-05T17:30:40 EET" name="Default test" finished-at="2022-06-05T17:30:43 EET" duration-ms="3267">
+      <class name="tests.UserRegistrationUsingRESTassured">
+        <test-method signature="TestDELETEWithRESTAssured()[pri:0, instance:tests.UserRegistrationUsingRESTassured@5824a83d]" started-at="2022-06-05T17:30:40 EET" name="TestDELETEWithRESTAssured" finished-at="2022-06-05T17:30:42 EET" duration-ms="1323" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@53fb3dab]" started-at="2022-06-02T20:27:38 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-06-02T20:27:44 EET" duration-ms="5823" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User Registration"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["User Registration"]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- TestDELETEWithRESTAssured -->
+        <test-method signature="TestGETWithRESTAssured()[pri:0, instance:tests.UserRegistrationUsingRESTassured@5824a83d]" started-at="2022-06-05T17:30:42 EET" name="TestGETWithRESTAssured" finished-at="2022-06-05T17:30:42 EET" duration-ms="725" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@53fb3dab]" started-at="2022-06-02T20:27:44 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-06-02T20:27:48 EET" duration-ms="3859" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User Registration"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["User Registration"]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- TestGETWithRESTAssured -->
+        <test-method signature="TestPATCHWithRESTAssured()[pri:0, instance:tests.UserRegistrationUsingRESTassured@5824a83d]" started-at="2022-06-05T17:30:42 EET" name="TestPATCHWithRESTAssured" finished-at="2022-06-05T17:30:43 EET" duration-ms="302" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@53fb3dab]" started-at="2022-06-02T20:27:48 EET" name="tearDownClass" finished-at="2022-06-02T20:27:48 EET" duration-ms="22" status="PASS">
+        </test-method> <!-- TestPATCHWithRESTAssured -->
+        <test-method signature="TestPOSTWithRESTAssured()[pri:0, instance:tests.UserRegistrationUsingRESTassured@5824a83d]" started-at="2022-06-05T17:30:43 EET" name="TestPOSTWithRESTAssured" finished-at="2022-06-05T17:30:43 EET" duration-ms="301" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- runner.TestRunner -->
+        </test-method> <!-- TestPOSTWithRESTAssured -->
+        <test-method signature="TestPUTWithRESTAssured()[pri:0, instance:tests.UserRegistrationUsingRESTassured@5824a83d]" started-at="2022-06-05T17:30:43 EET" name="TestPUTWithRESTAssured" finished-at="2022-06-05T17:30:43 EET" duration-ms="374" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestPUTWithRESTAssured -->
+        <test-method signature="TestWithRESTAssured1()[pri:0, instance:tests.UserRegistrationUsingRESTassured@5824a83d]" started-at="2022-06-05T17:30:43 EET" name="TestWithRESTAssured1" finished-at="2022-06-05T17:30:43 EET" duration-ms="215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestWithRESTAssured1 -->
+      </class> <!-- tests.UserRegistrationUsingRESTassured -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
